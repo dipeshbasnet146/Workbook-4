@@ -3,21 +3,24 @@ package org.example;
 public class Vehicle {
     int vin;
     int year;
+    String make;
     String model;
     String vehicleType;
     String color;
     int odometer;
     double price;
 
-    public Vehicle(int vin, int year, String model, String vehicleType, String color, int odometer, double price) {
+    public Vehicle(int vin, int year, String make, String model, String vehicleType, String color, int odometer, double price) {
         this.vin = vin;
         this.year = year;
+        this.make = make;
         this.model = model;
         this.vehicleType = vehicleType;
         this.color = color;
         this.odometer = odometer;
         this.price = price;
     }
+
 
     public int getVin() {
         return vin;
@@ -33,6 +36,14 @@ public class Vehicle {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
     }
 
     public String getModel() {
