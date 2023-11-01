@@ -1,56 +1,51 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Dealership {
     String name;
     String address;
-    String phoneNumber;
+    String phone;
+    ArrayList<Vehicle> inventory;
 
-    ArrayList<Vehicle>inventory;
-
-    public Dealership(String name, String address, String phoneNumber) {
-        this.name = name;
-        this.address = address;
-        this.phoneNumber = phoneNumber;
-        this.inventory = new ArrayList<>();
-    }
-
-    public void addVehicle(Vehicle vehicle){
+    public Dealership(String name, String address, String phone) {
 
     }
 
-    public ArrayList<Vehicle> getAllVehicles(){
-
-        return inventory;
+    public List<Vehicle> getVehiclesByPrice(double min, double max) {
+        return null;
     }
 
-    public String getName() {
-        return name;
+    public List<Vehicle> getVehiclesByMakeModel(String make, String model) {
+        return null;
     }
 
-
-    public void setName(String name) {
-        this.name = name;
+    public List<Vehicle> getVehiclesByYear(int min, int max) {
+        return null;
     }
 
-    public String getAddress() {
-        return address;
+    public List<Vehicle> getVehiclesByColor(String color) {
+        return null;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public List<Vehicle> getVehicleByMileage(int min, int max) {
+        return null;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public List<Vehicle> getVehicleByType(String vehicleType) {
+        return null;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public List<Vehicle> getAllVehicles() {
+        return null;
     }
 
-    public ArrayList<Vehicle> getAllVehicle() {
-        return inventory;
+    public void addVehicle(Vehicle vehicle) {
+
+    }
+
+    public void removeVehicle(Vehicle vehicle) {
+
     }
 }
