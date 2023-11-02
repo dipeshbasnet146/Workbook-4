@@ -14,7 +14,7 @@ public class Dealership {
         this.address = address;
         this.phone = phone;
 
-        ArrayList<Vehicle>inventory= new ArrayList<>();
+        inventory= new ArrayList<>();
     }
 
     public String getName() {
